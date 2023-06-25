@@ -1,0 +1,65 @@
+What is collection?
+-> If we want to represent a group of individual objects as a single entity then we should go for collection.
+
+What is Collection Framework?
+-> It defines several classes and interfaces which can be used a group of objects as a single entity.
+
+Parallel between Java and C++:
+
+JAVA                    |               C++
+1. Collection;          | 1. Container;
+2. Collection framwork. | 2. STL (Standard Template Library).
+
+9 Keys interfaces of Collection Framework:
+
+1. Collection:
+
+-> Collection interface defines the most common methods which are applicable for any Collection object;
+-> In general, collection interface is considered as root interface of Collection Framework.
+NOTE: There is no concrete class which implements collection interface directly.
+
+# Collection vs Collections:
+# Collection is a interface!
+# Collections is an utility class present in java.util.package to define several utility methods (like sorting, searching...) for Collection objects
+
+2. List:
+
+-> List is child interface of Collection;
+-> If we want to represent a group of individual objects as a single entity where duplicates are allowed and insertion order
+preserved then we should go for List;
+-> List implementations: LinkedList, ArrayList, Vector, Stack...
+
+3. Set:
+
+-> It is child interface of Collection;
+-> If we want to represent a group of individual objects as a single entity where duplicates are now allowed and insertion order
+not preserver then we can go for Set;
+-> Set implementations: HashSet, LinkedHashSet (also implementation of HashSet)...
+
+# Differences between List and Set:
+
+List                          |              Set
+                              |                        
+1. Duplicates allowed;        | 1. Duplicates not allowed;
+2. Insertion order preserved. | 2. Insertion order not preserved.
+
+4. SortedSet
+
+-> It is child interface of Set and grandchild of Collection;
+-> If we want to represent a group of individual objects as a single entity where duplicates are not allowed but all objects should be
+inserted according to some sorting order then we should go for SortedSet.
+
+5. Navigable Set
+
+-> It is child interface of SortedSet, it defines several methods for navigation purposes;
+-> Implementation class of Navigable Set interface is TreeSet. 
+
+6. Queue
+
+-> It is child interface of Collection;
+-> If we want to represent a group of individual objects prior to processing then we should go for Queue;
+-> For example: before sending a mail all mail id's we have to store somewhere and in which order we saved in the same order
+mail's should be delivered (First in First Out) for this requirement, Queue concept is the best choice.
+-> Queue implementations: 
+- Priority Queue;
+- BlockingQueue: LinkedBlockingQueue, PriorityBlockingQueue.
