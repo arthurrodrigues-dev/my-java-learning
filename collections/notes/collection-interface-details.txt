@@ -9,3 +9,17 @@ void clear()                                           Iterator iterator()
 
 Note: Collection interface doesn't contain any method to retrieve objects there
 is no concrete class which implements collection class directly.
+
+List Interface Details:
+
+-> We can differentiate duplicates by using index.
+-> We can preserve insertion order by using index, hence index play very important role
+in list interface.
+-> Specific methods:
+
+void add(int index, Object o)                           object set(int index, Object new) 
+boolean addAll(int index, Collection c)                 int indexOf(Object o)
+object get(int index)                                   int lastIndexOf(Object o)
+object remove(int index)                                ListIterator listIterator()
+
+Note: .set() replace the element present at specified index with provided Object and returns old Object
