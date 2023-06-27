@@ -1,15 +1,3 @@
-What is collection?
--> If we want to represent a group of individual objects as a single entity then we should go for collection.
-
-What is Collection Framework?
--> It defines several classes and interfaces which can be used a group of objects as a single entity.
-
-Parallel between Java and C++:
-
-JAVA                    |               C++
-1. Collection;          | 1. Container;
-2. Collection framwork. | 2. STL (Standard Template Library).
-
 9 Keys interfaces of Collection Framework:
 
 1. Collection:
@@ -27,14 +15,18 @@ NOTE: There is no concrete class which implements collection interface directly.
 -> List is child interface of Collection;
 -> If we want to represent a group of individual objects as a single entity where duplicates are allowed and insertion order
 preserved then we should go for List;
--> List implementations: LinkedList, ArrayList, Vector, Stack...
+-> List implementations: 
+- LinkedList; 
+- ArrayList;
+- Vector: Stack.
 
 3. Set:
 
 -> It is child interface of Collection;
 -> If we want to represent a group of individual objects as a single entity where duplicates are now allowed and insertion order
-not preserver then we can go for Set;
--> Set implementations: HashSet, LinkedHashSet (also implementation of HashSet)...
+not preserved then we can go for Set;
+-> Set implementations: 
+- HashSet: LinkedHashSet
 
 # Differences between List and Set:
 
@@ -45,7 +37,7 @@ List                          |              Set
 
 4. SortedSet
 
--> It is child interface of Set and grandchild of Collection;
+-> It is child interface of Set;
 -> If we want to represent a group of individual objects as a single entity where duplicates are not allowed but all objects should be
 inserted according to some sorting order then we should go for SortedSet.
 
@@ -61,5 +53,42 @@ inserted according to some sorting order then we should go for SortedSet.
 -> For example: before sending a mail all mail id's we have to store somewhere and in which order we saved in the same order
 mail's should be delivered (First in First Out) for this requirement, Queue concept is the best choice.
 -> Queue implementations: 
-- Priority Queue;
+- PriorityQueue;
 - BlockingQueue: LinkedBlockingQueue, PriorityBlockingQueue.
+
+7. Map
+
+-> Map is not child interface of Colleciton;
+-> If we want to represent a group of individual objects as key value pairs then should go for Map;
+-> Both key and value are objects, duplicated keys are not allowed but values can be duplicated.
+-> Map implementations:
+- HashMap: LinkedHashMap;
+- WeakHashMap;
+- IdentityHashMap;
+- Dictionary: Hashtable, Properties.
+
+8. SortedMap
+
+-> It is child interface of Map
+-> If we want to represent a group of individual objects as key value pairs accordint to some sorting order of keys,
+then we should go for SortedMap.
+
+9. NavigableMap
+
+-> It is child interface of SortedMap, it defines several utility methods for navigation purposes;
+-> NavigableMap implementation: TreeMap.
+
+-----------------
+Sorting:
+1. Comparable;
+2. Comparator.
+-----------------
+Cursors:
+1. Enumeration;
+2. Iterator;
+3. ListIterator.
+-----------------
+Utility classes:
+1. Collections
+2. Arrays
+

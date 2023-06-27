@@ -1,0 +1,41 @@
+ARRAYS
+
+-> An array is an indexed Collection of fixed number of homogeneus data elements.
+-> The main advantage of Arrays is we can represent multiple values with a single variable.
+-> So that reusability of the code will be improved.
+
+Differences between Arrays and Collections:
+
+- Arrays
+
+1. Fixed in size, you can't increase or decrease it's size.
+2. With reference to MEMORY, arrays are not recommended to use. 
+3. With reference to PERFORMANCE, Arrays are recommended to use.
+4. Arrays can hold only homogeneus datatype elements.
+5. Arrays concept is not implemented based on some standard data structure hence readymade method support
+is not available for every requirement we have to write the code explicitly. Which is complexity of programming.
+6. Array can hold both primitives and object types.
+
+- Collections
+
+1. Collections are growable in nature, we can increase and decrease it's size.
+2. With reference to MEMORY, collections are recommended to use.
+3. Wrt PERFORMANCE, collections are not recommended to use.
+4. Can hold both homogeneous and heterogeneous elements.
+5. Every Collection class is implemented based on some standard data structure. Hence readymade method support is
+available for every requirement. Being a programmer we have to use this method and we are not responsible to provide
+implementation.
+6. Collectons can hold only objects but not primitives.
+
+What is collection?
+-> If we want to represent a group of individual objects as a single entity then we should go for collection.
+
+What is Collection Framework?
+-> It defines several classes and interfaces which can be used a group of objects as a single entity.
+
+Parallel between Java and C++:
+
+JAVA                    |               C++
+1. Collection;          | 1. Container;
+2. Collection framwork. | 2. STL (Standard Template Library).
+

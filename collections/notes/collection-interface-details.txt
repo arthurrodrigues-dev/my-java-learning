@@ -1,0 +1,11 @@
+Important methods of Collection Interface
+
+boolean add(Object o)                                  boolean contains(Object o)
+boolean addAll(Collection c)                           boolean containsAll(Collection c)
+boolean remove(Object o)                               boolean isEmpty()
+boolean removeAll(Collection c)                        int size()
+boolean retainAll(Collectin c)                         Object[] toArray()
+void clear()                                           Iterator iterator()
+
+Note: Collection interface doesn't contain any method to retrieve objects there
+is no concrete class which implements collection class directly.
