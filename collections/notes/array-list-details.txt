@@ -1,0 +1,55 @@
+ArrayList
+
+-> The underlined data structure Resizable or Growable Array
+-> Duplicates allowed
+-> Insertion order preserved
+-> Heterogeneous objects are allowed (except TreeSet and TreeMap) everywhere
+Heterogeneous objects are allowed.
+-> "null" insertion is possible
+
+Constructors of ArrayList:
+
+1. ArrayList l = new ArrayList();
+Creates an empty Array List with default initial capacity 10. Once ArrayList reaches its max capacity,
+a new ArrayList will be created with new capacity = (currentCapacity * 3/2) + 1.
+
+2. ArrayList l = new ArrayList(int initialCapacity);
+3. ArrayList l = new ArrayList(Collection c);
+
+-> Usually we can use Collections to hold and transfer objects from one place to another place, to provide
+support for this requirement every Collection already implements Serializable and Cloneable interfaces.
+-> ArrayList and Vector classes implements RandomAcess interface so that we can access any random element
+with the same speed.
+-> Hence if our frequent operation is retrieval operation then ArrayList is the best choice.
+
+-> ArrayList is best choice if our frequent operation is retrieval operation (bc ArrayList implements RandomAccess)
+-> ArrayList is the WORST choice if our frequent operation is insertion or deletion in the middle (bc several shift operation are require)
+
+RandomAccess:
+-> Present in java.util.package;
+-> It doesn't contain any methods and it is a Marker interface
+
+Diferences between ArrayList and Vector
+
+            ArrayList                   |               Vector
+-> Every method present ArrayList is    |-> Every method present in 
+non synchronized;                       | Vector is synchronized;
+-> At a time multiple threads are       | -> At a a time, only one thread is
+allowed to operate on ArrayList         | allowed to operate on Vector 
+Object and hence ArrayList is not       | Object is thread safe;
+thread safe;                            |
+-> Threads are not required to wait     | -> Threads are required to wait to 
+to operate on ArrayList, hence          | operate on Vector Object and
+relatively performance is high;         | hence relatively performance is
+-> non-legacy.                          | low;
+                                        | -> legacy.
+
+How to get Synchronized ArrayList Object?
+
+-> By default, ArraList Object is non-synchronized but we can get synchronized version of ArrayList by using Collections class synchronizedList() method.
+
+Non-Synchronized:
+    ArrayList l1 = new ArrayList();
+
+Synchronized:
+    Lst l = Collections.synchronizedList(l1);
