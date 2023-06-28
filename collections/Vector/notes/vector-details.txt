@@ -1,0 +1,41 @@
+Vector
+
+-> Vector has all of the properties that ArrayList have, but with one difference
+-> Most of the methods present in Vector are synchronized. Hence Vector is thread-safe, different of ArrayList
+that is not thread-safe.
+
+Vector Specific methods
+
+addElement(Object o)
+removeElement(Object o)
+RemoveElementAt(int index)
+removeAllElements()
+Object elementAt(int index)
+Object firstElement()
+Object lastElement()
+
+int size()
+int capacity()
+Enumeration elements()
+
+Vector class Constructors:
+
+1. Vector v = new Vector();
+-> Creates an empty vector object with default initial capacity 10, once vector reaches it's max capacity, a new vector Object will be created with new capacity = 2 * current capacity.
+
+2. Vector v = new Vector(int initialCapacity);
+-> Creates an empty vector with specified initial capacity.
+
+3. Vector v = new Vector(int initialCapacity, int incrementalCapacity);
+-> Creates an empty vector with specified initial capacity and specify the incremental capacity that the vector will be increased when the capacity is full.
+
+4. Vector v = new Vector(Collection c);
+-> Creates an equivalent Vector object for the given Collection
+
+
+
+
+
+
+
+
