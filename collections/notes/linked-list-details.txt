@@ -1,0 +1,47 @@
+LinkedList
+
+-> The Linked List don't inherit the RandomAccess class so in order to access some element in the list, it
+requires more time than ArrayList, so it's the worst choice to this case.
+-> If we want to insert and remove elements in the middle of the list, LinkedList is the best choice bc 
+the LinkedList works with nodes concept, so the LinkedList don't shift the elements, it add a new node
+and points the previous node to the next one, and so on.
+-> The underlying data structure is Double Linked List.
+-> Insertion order preserved.
+-> Duplicates allowed.
+-> Heterogeneous objects allowed (except TreeMap and TreeSet).
+-> null insertion is possible.
+
+LinkedList Specific Methods
+-> Usually we can use LinkedList to implement stacks and queues to provide support for this requirement,
+LinkedList class defines the following specific methods:
+
+void addFirst(Object o)
+void addLast(Object o)
+Object getFirst()
+Object getLast()
+Object removeFirst()
+Object removeLast()
+
+Constructors of LinkedList
+
+1. LinkedList l = new LinkedList();
+-> Creates an empty LinkedList Object
+
+2. LinkedList l = new LinkedList(Collection c);
+-> Creates an equivalent LinkedList Object for the given Collection
+
+Differences between ArrayList and LinkedList
+
+ArrayList                                       LinkedList
+-> Best choice when frequent            | -> Best choice when frequent
+operation is retrieval;                 | operation is insertion or deletion;
+-> Worst choice when frequent           | -> Worst choice when frequent
+operation is insertion or               | operation is retrieval 
+deletion;                               | operation;
+-> Underlying DS is resizable           | -> Underlying DS is Double
+or growable Array;                      | Linked List;
+-> ArrayList implements RandomAccess    | -> LinkedList doesn't implements RandomAccess
+interface.                              | interface.
+                          
+
+
