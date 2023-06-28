@@ -1,4 +1,4 @@
-package collections.practice;
+package collections.CollectionInterfaces.practice;
 
 import java.util.*;
 

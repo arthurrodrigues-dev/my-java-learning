@@ -1,12 +1,11 @@
-package collections.challenges.linkedList;
+package collections.LinkedList.challenges;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 
+//  Write a Java program to iterate through all elements in a linked list starting at the specified position
 
-// Write a Java program to iterate a linked list in reverse order.
-
-public class Exercise4 {
+public class Exercise3 {
     public static void main(String[] args) {
         LinkedList<String> colors = new LinkedList<>();
         colors.add("Blue");
@@ -14,10 +13,13 @@ public class Exercise4 {
         colors.add("White");
         colors.add("Brown");
 
-        Iterator<String> it = colors.descendingIterator();
+        int position = 2;
+
+        Iterator<String> it = colors.listIterator(position);
 
         while (it.hasNext()) {
             System.out.println(it.next());
         }
+
     }
 }

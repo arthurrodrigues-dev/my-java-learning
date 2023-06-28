@@ -1,4 +1,4 @@
-package collections.challenges.linkedList;
+package collections.LinkedList.challenges;
 
 // import java.util.Iterator;
 import java.util.LinkedList;

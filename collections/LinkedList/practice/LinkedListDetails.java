@@ -1,4 +1,4 @@
-package collections.practice;
+package collections.LinkedList.practice;
 
 import java.util.LinkedList;
 
@@ -9,7 +9,7 @@ public class LinkedListDetails {
         l.add(30);
         l.add(null);
         l.add("Arthur");
-        
+
         l.set(0, "Software");
         l.add(0, "rodrigues");
 

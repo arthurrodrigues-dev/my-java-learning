@@ -1,4 +1,4 @@
-package collections.practice;
+package collections.Set.SortedSet.practice;
 
 import java.util.*;
 
