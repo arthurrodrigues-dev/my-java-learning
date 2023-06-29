@@ -1,0 +1,29 @@
+Three cursors of java
+-> Retrieve Objects one by one from collection object
+
+1. Enumeration
+2. Iterator
+3. ListIterator
+
+1. Enumeration:
+
+Enumeration e = v.elements(); // v is Vector object
+
+Enumeration methods:
+
+-> boolean hasMoreElements();
+-> Object nextElement();
+
+How to get one by one vector elements by using enumeration?
+
+Enumeration e = v.elements();
+
+while (e.hasMoreElements()) {
+    Integer I = (Integer) e.nextElement(); // nextElement() returns a object, so it's necessary to cast 
+}
+
+Limitations of Enumeration:
+-> Enumeration concept is applicable only for legacy classes and hence it's not a universal cursor.
+-> By using Enumeration we can get only read access and we can't perform remove operation.
+
+To overcome, we should go for Iterator.
