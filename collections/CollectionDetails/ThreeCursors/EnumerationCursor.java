@@ -15,7 +15,7 @@ public class EnumerationCursor {
 
         while (e.hasMoreElements()) {
             Integer i = e.nextElement();
-            if (i % 2 == 0) System.out.println(i);
+            if (i % 2 == 0) System .out.println(i);
         }
     }
 }

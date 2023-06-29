@@ -27,3 +27,24 @@ Limitations of Enumeration:
 -> By using Enumeration we can get only read access and we can't perform remove operation.
 
 To overcome, we should go for Iterator.
+
+2. Iterator
+
+-> We can apply Iterator concept for any Collection object hence it is universal cursors
+-> By using Iterator we can perform both read and remove operations.
+
+Iterator itr = c.iterator(); // c is any collection object
+
+Iterator methods:
+
+boolean hasNext();
+Object next();
+void remove();
+
+Limitations of Iterator:
+-> By using Enumeration and Iterator, we can move only forward direction and we can't move to the backward direction, and hence these are single direction cursors.
+-> By using Iterator, we can perform only read and remove operations and we can't perform replacement of new Objects.
+
+To overcome above limitations, we should go for ListIterator
+
+3. ListIterator
