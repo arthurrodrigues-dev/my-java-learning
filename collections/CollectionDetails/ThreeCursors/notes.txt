@@ -48,3 +48,31 @@ Limitations of Iterator:
 To overcome above limitations, we should go for ListIterator
 
 3. ListIterator
+
+-> It is child of Iterator.
+-> ListIterator is the most powerful cursor but it's limitation is that it is only applicable for List implemented class objects and it's not a universal cursor.
+-> By using ListIterator we can move either to forward and backward direction. ListIterator is bidirectional cursor.
+-> By using ListIterator we can perform replacement and addition of new Objects in addition to read and remove operations.
+
+-> Create ListIterator Object:
+ListIterator ltr = l.listIterator(); // l is any List object
+
+ListIterator Methods:
+
+-> Forward direction:
+
+boolean hasNext();
+Object next();
+int nextIndex();
+
+-> Backward direction:
+
+boolean hasPrevious();
+Object previous();
+int previousIndex();
+
+-> Extra capabilities:
+
+void remove();
+void set(Object new);
+void add(Object new);
