@@ -25,6 +25,7 @@ preserved then we should go for List;
 -> It is child interface of Collection;
 -> If we want to represent a group of individual objects as a single entity where duplicates are now allowed and insertion order
 not preserved then we can go for Set;
+-> Set interface doesn't contain any new methods. So we have to use only Collection interface methods.
 -> Set implementations: 
 - HashSet: LinkedHashSet
 

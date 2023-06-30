@@ -1,0 +1,22 @@
+HashSet
+
+-> The underlying DS is HashTable.
+-> Duplicates not allowed. If we are trying to insert duplicates, we won't get any compiletime or runtime error, add() method simply returns false.
+-> Insertion order not preserved and all objects will be inserted based on hashCode of objects.
+-> Heterogeneous objects are allowed.
+-> Null insertion possible.
+-> Implements Serializable and Clonable interfaces.
+-> HashSet is the best choice, if our frequent operation is Search.
+
+HashSet Constructors:
+
+HashSet h = new HashSet();
+-> Creates an empty HashSet with default initial capacity 16 and default fill ratio 0.75.
+
+HashSet h = new HashSet(int initialCapacity);
+HashSet h = new HashSet(int initialCapacity, float loadFactor)
+HashSet h = new HashSet(Collection c);
+
+Load Factor / Fill Ratio:
+-> After loading the how much factor, a new HashSet object will be created, that factor is called as Load Factor or Fill Ratio.
+
