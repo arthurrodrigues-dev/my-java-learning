@@ -1,0 +1,20 @@
+TreeSet
+
+-> Underlying DS for TreeSet is Balanced Tree.
+-> Duplicate objects are not allowed.
+-> Insertion order not preserved, but all objects will be inserted acorrding to some sorting order.
+-> Heterogeneous objects are not allowed.
+-> Null insertion not allowed.
+-> If we are depending on default natural sorting order, then objets should be homogeneous and comparable. Otherwise we will get runtime exception saying ClassCastException.
+-> An object is said to be Comparable if and only if the corresponding class implements java.lang.comparable interface.
+
+TreeSet Constructors
+
+1. TreeSet t = new TreeSet();
+-> Creates an empty TreeSet object where elements will be inserted according to default natural sorting order.
+
+2. TreeSet t = new TreeSet(Comparator c);
+-> Creates an empty TreeSet object where elements will be inserted according to customized sorting order.
+
+TreeSet t = new TreeSet(SortedSet s);
+TreeSet t = new TreeSet(Collection c);
