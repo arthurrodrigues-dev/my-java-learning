@@ -1,0 +1,25 @@
+SortedSet
+
+-> It is child interface of Set;
+-> If we want to represent a group of individual objects as a single entity where duplicates are not allowed but all objects should be
+inserted according to some sorting order then we should go for SortedSet.
+
+Specific methods:
+
+Object first();
+-> Returns first element of the SortedSet
+
+Object last(); 
+-> Returns last element.
+
+SortedSet headSet(Object obj);
+-> Returns the SortedSet whose elements are < obj (less than)
+
+SortedSet tailSet(Object obj);
+-> Returns the sortedset whose elements are >= obj
+
+SortedSet subSet(Object ob1, Object obj2);
+-> Returns the SortedSet whose elements are >= obj1 and < obj2
+
+Comparator comparator();
+-> Returns comparator object that describes underlying sorting technique. If we are using default natural sorting order then we'll get null.
