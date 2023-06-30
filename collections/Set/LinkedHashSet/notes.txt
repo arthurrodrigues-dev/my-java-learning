@@ -1,0 +1,10 @@
+LinkedHashSet
+
+-> It is child class of HashSet 
+-> It is exactly same as HashSet except for this following differences:
+- The underlying DS for LinkedHashSet is HashTable + LinkedList (Hybrid DS)
+- Insertion order preserved
+
+-> LinkedHashSet is the best choice to develop cache based applications, where duplicates are not allowed and insertion order must be preserved.
+
+LinkedHashSet has the same constructors as HashSet.
