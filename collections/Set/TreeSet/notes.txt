@@ -39,3 +39,21 @@ natural sorting order is not already available then we can define our
 own customized sorting order by using Comparator.
 
 2. Comparable ment for Default Natural Sorting Order where as Comparator ment for Customized Sorting Order.
+
+Comparator interface
+
+-> We can use comparator to define our own Customized Sorting Order.
+-> Present in java.util.package.
+-> Comparator has two methods:
+
+- public int compare(Object obj1, Object obj2);
+-> Exactly behavior of compareTo()
+
+- public boolean equals();
+
+!! IMPORTANT
+
+-> Whenever we are implementing Comparator interfae, compulsory we should
+provide implementation for compare() method.
+-> And implementing equals() method is optional, because it is already
+available in every java class from Object class through inheritance.
