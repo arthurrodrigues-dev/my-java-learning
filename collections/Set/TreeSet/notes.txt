@@ -53,7 +53,6 @@ Comparator interface
 
 !! IMPORTANT
 
--> Whenever we are implementing Comparator interfae, compulsory we should
-provide implementation for compare() method.
+-> Whenever we are implementing Comparator interfae, compulsory we should provide implementation for compare() method.
 -> And implementing equals() method is optional, because it is already
 available in every java class from Object class through inheritance.
