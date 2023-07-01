@@ -18,3 +18,24 @@ TreeSet Constructors
 
 TreeSet t = new TreeSet(SortedSet s);
 TreeSet t = new TreeSet(Collection c);
+
+Comparable interface
+-> This interface present in java.lang.package contains only one method:
+- public int compareTo(Object obj);
+
+Example:
+obj1.compareTo(obj2);
+
+-> returns negative value if obj1 has to come before obj2
+-> returns positive value if obj1 has to come after obj2
+-> returns 0 if obj1 and obj2 are equal
+
+If we depending on default natural sorting order, internally JVM will call compareTo() method while inserting objects to the TreeSet.
+Hence the objects should be Comparable.
+
+Note:
+1. If we are not satisfied with default natural sorting order of if the
+natural sorting order is not already available then we can define our
+own customized sorting order by using Comparator.
+
+2. Comparable ment for Default Natural Sorting Order where as Comparator ment for Customized Sorting Order.
