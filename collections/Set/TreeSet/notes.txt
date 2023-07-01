@@ -20,6 +20,7 @@ TreeSet t = new TreeSet(SortedSet s);
 TreeSet t = new TreeSet(Collection c);
 
 Comparable interface
+-> All wrapper classes and String class implement comparable interface.
 -> This interface present in java.lang.package contains only one method:
 - public int compareTo(Object obj);
 
@@ -43,6 +44,7 @@ own customized sorting order by using Comparator.
 Comparator interface
 
 -> We can use comparator to define our own Customized Sorting Order.
+-> The only implemented classes of Comparator are Collator and RuleBasedCollator.
 -> Present in java.util.package.
 -> Comparator has two methods:
 
@@ -54,6 +56,16 @@ Comparator interface
 !! IMPORTANT
 
 -> Whenever we are implementing Comparator interface, compulsory we should provide implementation for compare() method.
+
 -> And implementing equals() method is optional, because it is already
 available in every java class from Object class through inheritance.
+
 -> If we are defining our own sorting by Comparator, the objects do not need to be Comparable.
+
+-> For predefined Comparable classes like String, default natural 
+sorting order is already available. If we are not satisfied with that,
+we cann define our own sorting by Comparator object.
+
+-> For our own classes, the person who is writing is responsible to
+define default natural sorting order by implementing Comparable Interface. The person who is using our class, if not satisfied with
+it, then he can define his own sorting by using Comparator. 
