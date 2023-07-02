@@ -15,24 +15,15 @@ public class MiddleElement {
         nodeD.next = nodeE;
         // nodeE.next = nodeF;
 
-        int amountOfNodes = 1;
-        Node current = head;
-        while (current.next != null) {
-            amountOfNodes++;
-            current = current.next;
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
 
-        int i = 0;
-        Node middleNode = null;
-        current = head;
-
-        while (i != (amountOfNodes / 2)) {
-            current = current.next;
-            middleNode = current;
-            i++;
-        }
-       
-        System.out.println(middleNode.data);
+        System.out.println(slow.data);
         
     }
 }
