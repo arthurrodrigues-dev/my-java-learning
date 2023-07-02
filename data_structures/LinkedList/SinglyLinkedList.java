@@ -17,6 +17,11 @@ public class SinglyLinkedList {
         Node newnode = new Node(x);
         Node current = head;
 
+        if (head == null) {
+            head = newnode;
+            return;
+        }
+
         while (null != current.next) {
             current = current.next;
         }
