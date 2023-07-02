@@ -20,15 +20,6 @@ public class ReversingLinkedList {
     }
 
     static Node reversing(Node head) {
-        // Node newhead = null;
-        // while (head != null) {
-        //     Node nextnode = head.next;
-        //     head.next = newhead;
-        //     newhead = head;
-        //     head = nextnode;
-        // }
-
-        // return newhead;
 
         Node next = null;
         Node prev = null;
@@ -37,7 +28,8 @@ public class ReversingLinkedList {
         while (curr != null) {
             next = curr.next;
             curr.next = prev;
-            
+            prev = curr;
+            curr = next;
         }
 
         return prev;
