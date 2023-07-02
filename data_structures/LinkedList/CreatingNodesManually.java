@@ -1,4 +1,4 @@
-package collections.LinkedList.practice;
+package data_structures.LinkedList;
 
 public class CreatingNodesManually {
     public static void main(String[] args) {
