@@ -7,6 +7,10 @@ public class SinglyLinkedList {
         this.head = head;
     }
 
+    SinglyLinkedList() {
+        return;
+    }
+
     void insertAtBeginning(int x) {
         Node newnode = new Node(x);
         newnode.next = head;
