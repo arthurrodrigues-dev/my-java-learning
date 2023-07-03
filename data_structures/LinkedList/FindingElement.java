@@ -1,6 +1,6 @@
 package data_structures.LinkedList;
 
-public class RemoveElements {
+public class FindingElement {
     public static void main(String[] args) {
         Node head = new Node(1);
         Node nodeB = new Node(6);
@@ -17,24 +17,20 @@ public class RemoveElements {
         nodeE.next = nodeF;
         nodeF.next = nodeG;
 
-        Node dummy = head;
-        Node prev = dummy;
-        Node curr = head;
+        Node find3 = head;
+        Node current = head.next;
+        boolean found = false;
 
-        int val = 6;
-        while (curr != null) {
-            Node next = curr.next;
-
-            if (curr.data == val){
-                prev.next = next;
+        while (!found) {
+            if (current.data == 6) {
+                current = current.next;
             } else {
-                prev = curr;
+                find3 = current;
+                found = true;
             }
-
-            curr = next;
         }
 
+        System.out.println(find3.data);
 
-        DisplayingLinkedList.display(head);
     }
 }
