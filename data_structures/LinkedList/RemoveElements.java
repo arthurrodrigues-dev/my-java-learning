@@ -22,12 +22,14 @@ public class RemoveElements {
         Node current = head;
         Node next = current.next;
         Node noDaVez = current;
+
         while (current.next != null) {
             noDaVez = current;
             
             if (current.next.data == val) {
-                noDaVez = current.next.next;
-                current.next = null;
+                noDaVez.next = current.next.next;
+                current = current.next;
+                break;
             } else {
                 current = current.next;
             }
