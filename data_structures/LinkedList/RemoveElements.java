@@ -20,16 +20,14 @@ public class RemoveElements {
         int val = 6;
 
         Node current = head;
-        Node next = current.next;
-        Node noDaVez = current;
+        // Node next = current.next;
+        Node noDaVez = head;
 
-        while (current.next != null) {
+        while (current != null && current.next != null) {
             noDaVez = current;
-            
             if (current.next.data == val) {
                 noDaVez.next = current.next.next;
                 current = current.next;
-                break;
             } else {
                 current = current.next;
             }
