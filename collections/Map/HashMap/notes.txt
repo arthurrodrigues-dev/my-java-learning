@@ -1,0 +1,24 @@
+HashMap
+
+-> Underlying DS for HashMap is HashTable
+-> Insertion order not preserved, it is based on hashCode only of keys.
+-> Duplicate keys is not allowed, but duplicate values is allowed.
+-> Heterogeneous keys and values are allowed.
+-> Null is allowed for key, but only once and allowed for values (any number of times).
+-> Implements Cloneable and Serializable
+-> HashMap is the best choice when frequent operation is Search.
+
+HashMap constructors:
+
+1. HashMap m = new HashMap();
+-> Creates an empty HashMap with initial capacity 16 and default fill ratio 0.75.
+
+2. HashMap m = new HashMap(int initialCapacity);
+-> Creates a HashMap with given initial capacity.
+
+3. HashMap m = new HashMap(int initialCapacity, float fillRatio);
+-> Creates a HashMap with given initial capacity and fill ratio.
+
+4. HashMap m = new HashMap(Map m);
+-> Creates an equivalent HashMap from a given Map.
+
