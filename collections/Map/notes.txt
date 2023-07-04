@@ -8,6 +8,7 @@ Introduction to Map
 -> Map is a collection of Entry objects.
 -> Map contains it's own specific methods so collection methods we can't use for map
 because concepts are different.
+-> Entry interface is defined inside Map interface only.
 
 Specific Methods:
 
@@ -48,5 +49,5 @@ Collection values();
 -> Return a collection containing all the values from the map.
 
 Set entrySet();
--> Return a set containing one entry from the map.
+-> Return a set containing all the entries from the map.
 
