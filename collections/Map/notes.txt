@@ -1,0 +1,8 @@
+Introduction to Map
+
+-> Map is NOT child interface of Collection, bc collection are used to represent single objects.
+-> If we want to represent a group of objects as key-value pairs we should go for Map.
+-> Duplicate keys are not allowed, but values are.
+-> Each key-value is called as Entry and a map is a group of Entrys.
+-> Both keys and values are objects only.
+-> Map is a collection of Entry objects.
