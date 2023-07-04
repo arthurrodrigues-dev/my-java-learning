@@ -6,3 +6,14 @@ Introduction to Map
 -> Each key-value is called as Entry and a map is a group of Entrys.
 -> Both keys and values are objects only.
 -> Map is a collection of Entry objects.
+-> Map contains it's own specific methods so collection methods we can't use for map
+because concepts are different.
+
+Specific Methods:
+
+Object put(Object key, Object value); 
+-> If we try to insert a new Entry but the key is already in the map,
+the value will be replaced and old value will be returned. Otherwise, null is returned.
+
+m.putAll(Map m);
+-> Put all the entries from a map to another.
