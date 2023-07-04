@@ -15,5 +15,27 @@ Object put(Object key, Object value);
 -> If we try to insert a new Entry but the key is already in the map,
 the value will be replaced and old value will be returned. Otherwise, null is returned.
 
-m.putAll(Map m);
+void putAll(Map m);
 -> Put all the entries from a map to another.
+
+Object get(Object key);
+-> Get value from a corresponding key. If the key is not there, we'll get null.
+
+Object remove(Object key);
+-> Removes the entry associated with specified key.
+
+boolean containsKey(Object key);
+-> Check if the key is in the map.
+
+boolean containsValue(Object value);
+-> Check if the value is in the map.
+
+boolean isEmpty();
+-> Check if the map is empty.
+
+int size();
+-> Return number of key-value pairs.
+
+void clear();
+-> Clear the map.
+

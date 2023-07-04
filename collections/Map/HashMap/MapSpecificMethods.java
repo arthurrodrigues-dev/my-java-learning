@@ -3,7 +3,7 @@ package collections.Map.HashMap;
 import java.util.HashMap;
 import java.util.Map;
 
-public class HashMapClass {
+public class MapSpecificMethods {
     public static void main(String[] args) {
         Map<Integer, String> hashMap = new HashMap<>();
 
@@ -21,7 +21,19 @@ public class HashMapClass {
         hashMap.putAll(anotherHm);
 
         System.out.println(hashMap);
+        System.out.println("value of key 103: " + hashMap.get(103));
 
+        Object removed = hashMap.remove(101);
+        System.out.println("Entry removed: " + removed);
 
+        System.out.println(hashMap);
+
+        System.out.println("contains 101? " + hashMap.containsKey(101));
+        System.out.println("contains value Maria? " + hashMap.containsValue("Maria"));
+        System.out.println(hashMap);
+        System.out.println("Hashmap size: " + hashMap.size());
+        
+        hashMap.clear();
+        System.out.println("is empty? " + hashMap.isEmpty());
     }   
 }
