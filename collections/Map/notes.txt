@@ -39,3 +39,14 @@ int size();
 void clear();
 -> Clear the map.
 
+Collections views of Map:
+
+Set keySet();
+-> Return a set containing all the keys from the map.
+
+Collection values();
+-> Return a collection containing all the values from the map.
+
+Set entrySet();
+-> Return a set containing one entry from the map.
+
