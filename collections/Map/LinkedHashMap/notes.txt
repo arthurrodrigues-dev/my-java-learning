@@ -1,0 +1,8 @@
+LinkedHashMap
+
+-> It is child class of HashMap
+-> It is exactly same as HashMap (including methods and constructors) with two differences:
+1. Underlying data structure for LinkedHashMap is Hashtable + LinkedList (Hybrid data structure)
+2. Insertion order preserved.
+
+
