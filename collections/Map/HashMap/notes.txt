@@ -22,3 +22,21 @@ HashMap constructors:
 4. HashMap m = new HashMap(Map m);
 -> Creates an equivalent HashMap from a given Map.
 
+Differences between HashMap and HashTable;
+
+HashMap
+-> Not synchronized.
+-> Multiple threads are able to operate, so it's not thread safe.
+-> Relatively perfomance is high.
+-> null allowed for key and value.
+-> Not legacy.
+
+HashTable
+-> Synchronized.
+-> Only one thread is able to operate, so it's thread safe.
+-> Relatively perfomance is low.
+-> null not applicable. // NPE
+-> Legacy.
+
+How to get synchronized version of HashMap?
+-> By using Collections.synchronizedMap(Map<K, V> m);
