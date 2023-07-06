@@ -2,3 +2,9 @@ Difference between the == and equals():
 
 -> In general, double equal operator (==) is meant for reference comparison or address comparison.
 -> equals is meant for values comparison
+
+IdentityHashMap
+-> It is exactly same as HashMap with one difference:
+- In the case of HashMap, jvm will use equals() method to identify duplicate keys.
+- In the IdentityHashMap, jvm will use double equal operator (==) to identify duplicate keys.
+
