@@ -5,4 +5,5 @@ LinkedHashMap
 1. Underlying data structure for LinkedHashMap is Hashtable + LinkedList (Hybrid data structure)
 2. Insertion order preserved.
 
+-> Commonly used for cache based applications.
 
