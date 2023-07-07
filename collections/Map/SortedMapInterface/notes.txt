@@ -1,0 +1,27 @@
+SortedMap
+
+-> Child interface of Map.
+-> If we want to represent a group of key-value pairs according to some sorting order
+of keys, then we should go for SortedMap.
+
+SortedMap Specific methods:
+
+Consider the following entries:
+101 -> A 
+103 -> B 
+104 -> C 
+107 -> D
+125 -> E 
+136 -> F 
+
+firstKey(); // 101
+
+lastKey(); // 136
+
+headMap(107); // { 101=A, 103=B, 104=C } key < obj
+
+tailMap(107); // { 107=D, 125=E, 136=F } key >= obj
+
+subMap(103, 125) // { 103=B, 104=C, 107=D } >= 103 and < 125
+
+Comparator comparator();
