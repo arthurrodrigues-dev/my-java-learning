@@ -4,13 +4,18 @@ import java.util.*;
 
 public class TreeMapClass {
     public static void main(String[] args) {
-        TreeMap<Integer, String> tm = new TreeMap<>((Integer i1, Integer i2) -> {
-            return i2.compareTo(i1);
-        }
-        ) ;
-        tm.put(1, "A");
-        tm.put(2, "B");
-        tm.put(450, "C");
+        TreeMap<Object, Object> tm = new TreeMap<>() {
+            {
+                put(100, "ZZZ");
+                put(103, "YYY");
+                put(101, "XXX");
+                put(104, 106);
+                // put("FFFF", "XXX"); // CCE because depending on D.N.S.O, heterogeneous keys are not allowed. 
+                // put(null, "XXX"); // NPE, key null insertion is not allowed
+            }
+        };
+
         System.out.println(tm);
+     
     }
 }
