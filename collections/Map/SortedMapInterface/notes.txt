@@ -14,14 +14,14 @@ Consider the following entries:
 125 -> E 
 136 -> F 
 
-firstKey(); // 101
+Object firstKey(); // 101
 
-lastKey(); // 136
+Object lastKey(); // 136
 
-headMap(107); // { 101=A, 103=B, 104=C } key < obj
+SortedMap headMap(107); // { 101=A, 103=B, 104=C } key < obj
 
-tailMap(107); // { 107=D, 125=E, 136=F } key >= obj
+SortedMap tailMap(107); // { 107=D, 125=E, 136=F } key >= obj
 
-subMap(103, 125) // { 103=B, 104=C, 107=D } >= 103 and < 125
+SortedMap subMap(103, 125) // { 103=B, 104=C, 107=D } >= 103 and < 125
 
 Comparator comparator();
