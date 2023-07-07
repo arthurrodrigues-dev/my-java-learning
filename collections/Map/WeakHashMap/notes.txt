@@ -1,0 +1,4 @@
+WeakHashMap
+
+-> It is exactly same as HashMap, with one small difference:
+- 
