@@ -1,0 +1,25 @@
+TreeMap
+
+-> Underlying DS for TreeMap is Red-black Tree.
+-> Insertion order not preserved.
+-> Duplicate keys not allowed, but duplicate values do.
+-> If we are depending on default natural sorting order, keys should be 
+homogeneous and Comparable.
+-> If we are defining our own sorting order, keys don't need to be homogeneous and Comparable.
+-> There are no restrictions about values independing of the sorting order. We can take
+heterogenous and non-comparable objects also.
+-> null keys is not accepted, but for value any numbers of null is accepted.
+
+Constructors:
+
+1. TreeMap t = new TreeMap();
+-> Creates an empty TreeMap and keys are sorted according to default natural sorting order.
+
+2. TreeMap t = new TreeMap(Comparator c);
+-> Creates an empty TreeMap with customized sorting order.
+
+3. TreeMap t = new TreeMap(Map m);
+-> Creates a TreeMap for the given map.
+
+4. TreeMap t = new TreeMap(SortedMap m);
+-> For any SortedMap, an equivalent TreeMap by default we are going to create.
