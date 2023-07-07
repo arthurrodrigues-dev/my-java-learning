@@ -1,0 +1,11 @@
+HashTable
+
+-> Underlying data structure is HashTable java class and HashTable data structure only.
+-> Insertion order is not preserved. It is inserted according to HashCode of keys.
+-> Duplicate keys not allowed but values do.
+-> Heterogeneous objects allowd in both key and value.
+-> null not applicable.
+-> HashTable implement Serializable and Clonable.
+-> Every method in HashTable is synchronized so it is thread-safe.
+-> If our frequent operation is search, HashTable is the best choice.
+
