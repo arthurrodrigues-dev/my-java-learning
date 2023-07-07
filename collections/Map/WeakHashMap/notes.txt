@@ -1,4 +1,7 @@
 WeakHashMap
 
 -> It is exactly same as HashMap, with one small difference:
-- 
+- In the Hashmap, even if a object loses it's reference, garbage collector
+can't destroy it because HashMap is "stronger" than it.
+- Otherwise, WeakHashMap is "Weak" which means that garbage collector is able 
+to destroy the object. 
