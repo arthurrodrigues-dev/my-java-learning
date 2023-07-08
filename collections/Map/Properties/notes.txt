@@ -16,4 +16,21 @@ business impact to the client.
 -> We can use java properties object to hold properties which are coming from 
 properties file.
 
+-> In normal map (like HashMap, Hashtable, TreeMap) key and value can be any type
+but in the case of Properties, key and value should be String.
 
+Properties Specific Methods:
+
+String getProperty(String propName);
+-> To get value associated with the specified property.
+
+String setProperty(String propName, String propValue); 
+-> To set a new Property, if the key already there, returns old value. 
+
+Enumeration propertyNames();
+
+void load(InputStream is);
+-> To load properties from properties file into java properties object.
+
+void store(OutputStream os, String comment);
+-> To store properties from java properties object into properties file.
