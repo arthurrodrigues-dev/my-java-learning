@@ -9,3 +9,6 @@ HashTable
 -> Every method in HashTable is synchronized so it is thread-safe.
 -> If our frequent operation is search, HashTable is the best choice.
 
+-> The constructors for HashTable is the same as HashMap, but the default initial capacity for HashTable is 11.
+
+-> 
