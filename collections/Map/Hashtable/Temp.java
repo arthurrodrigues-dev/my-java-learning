@@ -1,6 +1,6 @@
-package collections.Hashtable;
+package collections.Map.Hashtable;
 
-import java.util.Hashtable;
+import java.util.*;
 
 public class Temp {
     int i;
@@ -19,7 +19,7 @@ public class Temp {
     }
 
     public static void main(String[] args) {
-        Hashtable<Temp, String> h = new Hashtable<>();
+        Map<Temp, String> h = new Hashtable<>();
 
         // entries are inserted according to hashcode, and displayed from top to
         // bottom (according to hashcode insertion) and right to left (where are multiple entries);
