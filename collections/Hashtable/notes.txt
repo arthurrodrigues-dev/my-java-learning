@@ -11,4 +11,8 @@ HashTable
 
 -> The constructors for HashTable is the same as HashMap, but the default initial capacity for HashTable is 11.
 
--> 
+-> If we change the hashcode (overriding hashCode()) from the object we are 
+trying to insert, the insertion order from objects in hashtable is changed, it 
+is also changed when we increase or decrease the hashtable capacity.
+
+-> % (modulus) hashcode default value: 11
