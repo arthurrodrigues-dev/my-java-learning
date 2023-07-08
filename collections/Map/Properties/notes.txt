@@ -1,0 +1,19 @@
+Properties
+
+-> In our program, if anything changes frequently (like username, password,
+mail-ids, mobile number, etc) are not recommended to hard code (keep the values
+in the source code) in java program because if there is any change, to reflect 
+that change recompilation, rebuild, redeploy are required and even sometimes server restart is also required which creates a big business impact to the client.
+
+-> We can overcome this problem by using properties file such type of variable
+things we have to configure in the properties file. From the properties file we
+have to read into java program and we can use those properties.
+
+-> The main advantage of this approach is if there is a change in properties file
+to reflect that change, just redeployment is enough which won't create any 
+business impact to the client.
+
+-> We can use java properties object to hold properties which are coming from 
+properties file.
+
+
