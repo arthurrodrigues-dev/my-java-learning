@@ -37,3 +37,7 @@ PriorityQueue q = new PriorityQueue(Collection c);
 
 PriorityQueue q = new PriorityQueue(Comparator c);
 -> Empty PriorityQueue with default initialCapacity and customized sorting order.
+
+!! IMPORTANT
+
+-> Some platforms won't provide support for thread priorities and PriorityQueue.
