@@ -8,7 +8,7 @@ defined by Comparator.
 
 -> Insertion order not preserved and it is based on some priority.
 
--> Duplicate objects are not allowed.
+-> Duplicate objects is allowed.
 
 -> If we are depending on D.N.S.O, objects should be homogeneous and Comparable. Otherwise, we will get RuntimeException saying
 ClassCastException.
