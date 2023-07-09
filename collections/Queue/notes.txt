@@ -1,2 +1,36 @@
 Queue
 
+-> It is child interface of Collection.
+
+-> If we want to represent a group of individual objects prior to processing
+then we should go for Queue. For example: before sending SMS message, all mobile
+numbers we have to store in some data structure in which order we add mobile 
+numbers is the same order only message should be send. For this, First In First
+Out requirement, Queue is the best choice.
+
+-> Usually Queue follows First In First Out order but based on our requirement
+we can implement our own Priority order also (Priority Queue).
+
+-> LinkedList class also implements Queue interface.
+
+-> LinkedList based implementation of Queue follows First In First Out order.
+
+Queue Interface Specific Methods:
+
+boolean offer(Object o);
+-> Add an object into the queue.
+
+Object poll();
+-> Remove and return head element of the queue. Return null if the queue is empty.
+
+Object remove();
+-> Remove and return head element of the queue. Throws Runtime Exception if the
+queue is empty.
+
+Object peek();
+-> Return head element of the queue without removing it. Return null if the queue
+is empty.
+
+Object element();
+-> Return head element of the queue without removing it. Throws Runtime Exception
+if the queue is empty.
