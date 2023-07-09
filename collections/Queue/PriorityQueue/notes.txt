@@ -1,0 +1,39 @@
+PriorityQueue
+
+-> If we want to represent a group of individual objects prior to
+processing according to some priority then we should go for PriorityQueue.
+
+-> The priority can be either D.N.S.O or customized sorting order
+defined by Comparator.
+
+-> Insertion order not preserved and it is based on some priority.
+
+-> Duplicate objects are not allowed.
+
+-> If we are depending on D.N.S.O, objects should be homogeneous and Comparable. Otherwise, we will get RuntimeException saying
+ClassCastException.
+
+-> If we are defining our own sorting by Comparator, then objects
+need not be homogeneous and Comparable.
+
+-> Null is not applicable even as the first element also.
+
+PriorityQueue Constructors:
+
+PriorityQueue q = new PriorityQueue();
+-> Empty PriorityQueue with default inital capacity 11 and DNSO.
+
+PriorityQueue q = new PriorityQueue(int initialCapacity);
+-> Empty PriorityQueue with given initialCapacity.
+
+PriorityQueue q = new PriorityQueue(int initialCapacity, Comparator c);
+-> Empty PriorityQueue with given initialCapacity and customized sorting order.
+
+PriorityQueue q = new PriorityQueue(SortedSet s);
+-> Creates an equivalent PriorityQueue from a given TreeSeet
+
+PriorityQueue q = new PriorityQueue(Collection c);
+-> Creates an equivalent PriorityQueue from a given Collection.
+
+PriorityQueue q = new PriorityQueue(Comparator c);
+-> Empty PriorityQueue with default initialCapacity and customized sorting order.
