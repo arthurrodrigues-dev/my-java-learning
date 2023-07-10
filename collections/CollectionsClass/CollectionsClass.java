@@ -1,4 +1,4 @@
-package collections.CollectionDetails.practice;
+package collections.CollectionsClass;
 
 import java.util.Arrays;
 import java.util.Collections;
