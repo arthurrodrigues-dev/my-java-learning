@@ -10,3 +10,9 @@ Sorting elements of List
 
 2. public static void sort(List l, Comparator c);
 -> Sort lists according to customized sorting order.
+
+Searching elements of list
+
+public static int binarySearch(List l, Object target);
+-> List should be sorted in order to binarySearch works. Return the index if target is in the list. Otherwise, it will return the insertion point where the target would be inserted.
+    
