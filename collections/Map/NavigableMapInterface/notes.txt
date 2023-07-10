@@ -1,0 +1,15 @@
+Navigable Map
+
+-> It is child interface of SortedMap and it defines several methods for navigation purposes.
+
+-> NavigableMap defines the following methods:
+
+floorKey(e);
+lowerKey(e);
+ceilingKey(e);
+higherKey(e);
+pollFirstEntry(); // remove and returns first entry.
+pollLastEntry(); // remove and returns last entry.
+descendingMap();
+
+This methods above has the same behavior as NavigableSet specific methods but with keys and entries.
