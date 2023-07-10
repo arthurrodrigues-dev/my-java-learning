@@ -1,0 +1,12 @@
+Collections Class
+
+-> Collections class defines several utility methods for Collection objects like sorting, searching, reversing, etc...
+
+Sorting elements of List
+
+1. public static void sort(List l);
+-> Sort according to DNSO. (Objecs should be homogeneous and Comparable)
+-> List should not contain null. // NPE
+
+2. public static void sort(List l, Comparator c);
+-> Sort lists according to customized sorting order.
