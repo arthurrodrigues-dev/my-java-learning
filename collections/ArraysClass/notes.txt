@@ -1,0 +1,52 @@
+Arrays Class
+
+-> Arrays class is an utility class that defines several utility methods for Array objects.
+
+SORTING ELEMENTS OF ARRAY 
+
+1. public static void sort(primitive[] p);
+-> Sort a primitive array according to DNSO.
+
+2. public static void sort(Object[] o);
+-> Sort an object array according to DNSO.
+
+3. public static void sort(Object[] o, Comparator c);
+-> Sort an object array according to customized sorting order.
+
+Note:
+
+Primitive array can be sorted only with DNSO.
+Object array can be sorted with both DNSO or CSO.
+
+SEARCHING ELEMENTS OF ARRAY
+
+-> Arrays class defines the following binary search methods:
+
+1. public static int binarySearch(primitive[] p, primitive target);
+
+2. public static int binarySearch(Object[] a, Object target);
+
+3. public static int binarySearch(Object[] a, Object target, Comparator c);
+
+Note:
+
+All rules of arrays class binary search methods are exactly same as Collections class binary search methods.
+
+CONVERSION OF ARRAY TO LIST AND LIST TO ARRAY
+
+1. public static List asList(Object[] a);
+-> This method won't create an independent list object. For the existing array, we are getting list "view".
+
+Example:
+String[] s = {"A", "Z", "B"};
+List l = Arrays.asList(s);
+
+String[] s -------> ["A", "Z", "B"]
+                        ^
+                        |
+List l ------------------
+
+
+-> Changes made in any one, array or list will be reflected because both are pointing to the same object.
+-> By using list reference, we can't perform any operation which vary the size, otherwise we'll get RuntimeException saying UnsupportedOperationException.
+-> By using list reference, we are not allowed to replace with Heterogeneous objects (but you can with homogeneous objects). Otherwise, we will get RuntimeException saying ArrayStoreException.
