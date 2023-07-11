@@ -2,7 +2,7 @@ Collections Class
 
 -> Collections class defines several utility methods for Collection objects like sorting, searching, reversing, etc...
 
-Sorting elements of List
+SORTING ELEMENTS OF LIST
 
 1. public static void sort(List l);
 -> Sort according to DNSO. (Objecs should be homogeneous and Comparable)
@@ -11,8 +11,42 @@ Sorting elements of List
 2. public static void sort(List l, Comparator c);
 -> Sort lists according to customized sorting order.
 
-Searching elements of list
+SEARCHING ELEMENTS OF LIST
 
 public static int binarySearch(List l, Object target);
 -> List should be sorted in order to binarySearch works. Return the index if target is in the list. Otherwise, it will return the insertion point where the target would be inserted.
     
+public static int binarySearch(List l, Object target, Comparator c);
+-> We have to use this method if the list is sorted according to customized sorting order.
+
+NOTE:
+-> If the list is not sorted and we are trying to use binarySearch methods, unpredictable results we are going to get.
+
+For list of n elements:
+
+1. Sucessful search result range: 0 to n - 1.
+2. Unsucessful search result range: (n + 1) to -1.
+3. Total result range: -(n + 1) to n-1.
+
+Example:
+
+3 elements in a list
+
+ -1   -2    -3  -4
+["A", "K", "Z"]
+  0    1    2
+
+Sucessful search result range: 0 to 2.
+Unsucessful search result range: -4 to -1.
+Total result range: -4 to 2.
+
+REVERSING ELEMENTS OF LIST
+
+public static void reverse(List l);
+-> Reverse order of list elements. 
+
+public static Comparator reverseOrder();
+-> We can use reverseOrder() method to get reversed comparator.
+
+Example: Comparator c1 = Collections.reverseOrder(Comparator c);
+-> The comparato c1 will be the reversed comparator of c comparator given as parameter.
