@@ -1,0 +1,37 @@
+Strings
+
+-> When you write something like:
+
+String name = "Jim";
+
+The reference name is pointing to "Jim" object which is stored in String pool in heap.
+
+-> String pool is a separate memory structure inside the heap and makes our program more optimized.
+-> All the similar values of Strings are not recreated. Example:
+
+String b = "Jim";
+
+-> Since the object "Jim" already exists in the pool, the b reference is now pointing to the same as the variable which already has the "Jim" value (name variable).
+
+- Hence the two variables are pointing to the same object, if we change any of the variables, the change will be reflected to all the references?
+
+-> NO!!! because, String is immutable and you can't change the object!
+
+When you do something like:
+    String  a = "Kunal";
+    a = "Kushwaha";
+
+You are NOT modifying the "Kunal" String, you are creating a new object called
+"Kushwaha" and reassigning the reference variable a to the new object "Kushwaha"
+which is created in String pool.
+
+- What happen when the "Kunal" object loses it's reference variable?
+-> Gargabe collector destroy the objects which loses it's references.
+
+- Why are Strings immutable?
+-> String is immutable for security reasons. 
+
+For example: if we have a database where multiple references is
+happen to one string object, and one person change the string, if 
+strings were not immutable, the change would be reflected to all the 
+references in the database.
