@@ -35,3 +35,10 @@ For example: if we have a database where multiple references is
 happen to one string object, and one person change the string, if 
 strings were not immutable, the change would be reflected to all the 
 references in the database.
+
+- How to create different objects with the same value?
+
+String a = new String("Kunal");
+String b = new String("Kunal");
+
+-> These values are being created outside the pool, aka heap memory.
