@@ -42,3 +42,8 @@ String a = new String("Kunal");
 String b = new String("Kunal");
 
 -> These values are being created outside the pool, aka heap memory.
+
+StringBuilder
+
+-> To concatenate strings, a new string object is created copying the old value and appending the new value, that causes bad performance.
+-> To solve this problem and make strings mutable, we use StringBuilder. The reference is the same and do not change or create new objects, only append to the existing string.
