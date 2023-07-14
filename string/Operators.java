@@ -25,5 +25,8 @@ public class Operators {
         String ans = 56 + "" + new ArrayList<>();
 
         System.out.println(ans);
+
+        // if any of the data type is string, answer is string!
+        System.out.println("a" + 'b');
     }
 }
